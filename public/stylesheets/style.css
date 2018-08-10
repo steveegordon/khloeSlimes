@@ -1,8 +1,121 @@
+@font-face {
+  font-family: Shlop;
+  src: url(../fonts/shlop.ttf);
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+body > .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: black;
+}
+
+img.w-100 {
+  height: calc(80vh - 56px);
+}
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.left {
+  padding-top: 15px;
+  background-color: red;
+  height: 200px;
+}
+
+.right {
+  background-color: purple;
+  height: 200px;
+}
+
+.mid {
+  height: 200px;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.card-body {
+  border-top: 1px solid rgba(0,0,0,.125)
+}
+
+.card-img-top {
+  height: 225.5px;
+}
+
+#header {
+  font-size: 500%;
+  letter-spacing: 8px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  color: blue;
+  display: inline-block;
+  z-index: 1;
+  font-family: Shlop;
+  font-weight: bold;
+  text-shadow:
+  1px 1px 0 #FFFF00,
+  2px 2px 0 #FFFF00;
+}
+.container-fluid {
+  position: relative;
+}
+
+div > nav.navbar {
+  background-color: #429a15;
+}
+
+.pic-link {
+  display: block;
+  max-width: 650px;
+  height: 100%;
+  position: relative;
+}
+
+.info {
+  display: block;
+  width: 100%;
+  height:100%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: orange;
+}
+.info:hover {
+  opacity: .8;
+}
+
+.info-caption > h4 {
+  color: white;
+  opacity: 1;
+  padding-top: 25%;
+}
+
+h2 > hr {
+  max-width: 50px;
+  border: solid #429a15;
+  border-top: 1px;
+}
+/*
+ul > .list-group-item {
+  display: inline-block;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}*/
