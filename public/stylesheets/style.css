@@ -3,6 +3,11 @@
   src: url(../fonts/shlop.ttf);
 }
 
+@font-face {
+  font-family: Icons;
+  src: url(../icons/twitter.svg);
+}
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -93,14 +98,14 @@ div > nav.navbar {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: orange;
+  background-color: yellow;
 }
 .info:hover {
   opacity: .8;
 }
 
 .info-caption > h4 {
-  color: white;
+  color: blue;
   opacity: 1;
   padding-top: 25%;
 }
@@ -110,12 +115,55 @@ h2 > hr {
   border: solid #429a15;
   border-top: 1px;
 }
-/*
-ul > .list-group-item {
-  display: inline-block;
+
+body > footer.container-fluid {
+/*  display: block;*/
+  margin-top: 15px;
+  height: 200px;
+  background-color: #429a15;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-}*/
+svg {
+  height: 24px;
+  width: 24px;
+}
+
+use {
+  stroke-width: 2;
+  stroke: yellow;
+  fill: blue;
+}
+
+use:hover {
+  fill: darkblue;
+  stroke: #8b8b00;
+}
+
+span:hover {
+  color: #8b8b00;
+}
+
+.portfolio {
+  padding-bottom: 118px;
+}
+
+.row > .list-inline > li > a {
+  padding: 8px;
+}
+
+.row > .list-inline {
+  padding-top: 8px;
+}
+
+span {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2.title {
+  color: blue;
+}

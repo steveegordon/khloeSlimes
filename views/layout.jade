@@ -1,12 +1,46 @@
 doctype html
 html
   head
-    title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/global.js')
     link(rel="stylesheet", href="/bootstrap/dist/css/bootstrap.min.css")
     script(src="/javascripts/jquery.min.js")
     script(src="/bootstrap/dist/js/bootstrap.min.js")
+    title #{title}
   body
+    .container-fluid
+      nav.navbar.navbar-light.navbar-expand-lg
+        a.navbar-brand(href="/") Khloes Slimes
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarText")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarText
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href="/") Home
+            li.nav-item 
+              a.nav-link(href="/slimes") Slimes
+            li.nav-item 
+              a.nav-link(href="/guides") Guides
+            li.nav-item 
+              a.nav-link(href="/contact") Contact
     block content
+    footer.container-fluid
+      .row.no-gutters
+        ul.list-inline
+          li.list-inline-item
+            a(href="#")
+              svg
+                use(xlink:href="icons/twitter.svg#twitter")
+              span Twitter
+          li.list-inline-item
+            a(href="#")
+              svg
+                use(xlink:href="icons/facebook.svg#facebook")
+              span Facebook
+          li.list-inline-item
+            a(href="#")
+              svg
+                use(xlink:href="icons/instagram.svg#instagram")
+              span Instagram
+
 
