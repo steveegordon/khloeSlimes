@@ -167,3 +167,74 @@ a {
 h2.title {
   color: blue;
 }
+
+/*Animations Test*/
+
+.testspace {
+  background-color: black;
+  height: 2000px;
+  width: 100vw;
+}
+
+#test {
+  height:400px;
+  width: 100vw;
+}
+
+.reddiv {
+  height: 300px;
+  width: calc(25vw);
+  margin-top: 50px;
+  margin-left: calc(25vw / 4);
+  background-color: red;
+  display: inline-block;
+}
+
+.bluediv {
+  height: 300px;
+  width: calc(25vw);
+  margin-top: 50px;
+  margin-left: calc(25vw / 4);
+  margin-right: calc(25vw / 4);
+  background-color: blue;
+  display: inline-block;
+}
+
+.yellowdiv {
+  height: 300px;
+  width: calc(25vw);
+  margin-top: 50px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+#test div {
+  opacity: 0;
+}
+
+@keyframes animation {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+#test.animate div {
+  animation: animation 3s forwards;
+}
+
+#test.animate .bluediv {
+  animation-delay: 1s;
+}
+
+#test.animate .yellowdiv {
+  animation-delay: 2s;
+}
