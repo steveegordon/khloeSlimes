@@ -208,7 +208,7 @@ h2.title {
   display: inline-block;
 }
 
-#test div {
+.card-deck div {  
   opacity: 0;
 }
 
@@ -218,7 +218,7 @@ h2.title {
   }
 }
 
-@keyframes bounce {
+@keyframes slide {
   0%, 100% {
     transform: translateY(0);
   }
@@ -227,7 +227,7 @@ h2.title {
   }
 }
 
-#test.animate div {
+.card-deck.animate div {
   animation: animation 3s forwards;
 }
 
@@ -237,4 +237,38 @@ h2.title {
 
 #test.animate .yellowdiv {
   animation-delay: 2s;
+}
+
+
+.portfolio.animate .slide {
+  transform: translateX(0);
+}
+
+.slide {
+  transform: translateX(-100vw);
+  transition: all 1s ease-in;
+}
+
+body .portfolio:nth-child(0) {
+  transition-delay: 1s;
+}
+
+body .portfolio:nth-child(1) {
+  display: hidden;
+}
+
+body .portfolio:nth-child(2) {
+  transition-delay: 3s;
+}
+
+body .portfolio:nth-child(3) {
+  transition-delay: 2s;
+}
+
+body .portfolio:nth-child(4) {
+  transition-delay: 5s;
+}
+
+body .portfolio:nth-child(5) {
+  transition-delay: 4s;
 }
