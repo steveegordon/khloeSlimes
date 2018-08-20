@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Bubbly;
+  src: url(../fonts/Double_Bubble_shadow.otf);
+}
+
+@font-face {
   font-family: Icons;
   src: url(../icons/twitter.svg);
 }
@@ -14,6 +19,10 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+.nav-link, .navbar-brand {
+  font-family: Bubbly;
 }
 
 body > .container-fluid {
@@ -27,6 +36,8 @@ img.w-100 {
 }
 
 .title {
+  font-family: Bubbly;
+  font-size: 2.5rem;
   padding-top: 30px;
   padding-bottom: 15px;
 }
@@ -54,12 +65,8 @@ img.w-100 {
   border-top: 1px solid rgba(0,0,0,.125)
 }
 
-.card-img-top {
-  height: 225.5px;
-}
-
 #header {
-  font-size: 500%;
+  font-size: 6rem;
   letter-spacing: 8px;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -108,7 +115,12 @@ div > nav.navbar {
 .info-caption > h4 {
   color: blue;
   opacity: 1;
-  padding-top: 25%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-family: Shlop;
+  font-size: 4rem;
 }
 
 h2 > hr {
@@ -266,6 +278,35 @@ h2.title {
 }
 
 .slides:nth-child(1) {
+  transition: all 2s ease-in-out 0s;
+}
+
+.slides:nth-child(2) {
+  transition: all 2s ease-in-out 1s;
+}
+
+.slides:nth-child(3) {
+  transition: all 2s ease-in-out 2s;
+}
+
+.slides:nth-child(4) {
+  transition: all 2s ease-in-out 3s;
+}
+
+.slides:nth-child(5) {
+  transition: all 2s ease-in-out 4s;
+}
+
+.slides:nth-child(6) {
+  transition: all 2s ease-in-out 5s;
+}
+@media screen and (min-width: 576px) {
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .slides:nth-child(1) {
   transition: all 2s ease-in-out .5s;
 }
 
@@ -287,4 +328,57 @@ h2.title {
 
 .slides:nth-child(6) {
   transition: all 2s ease-in-out 4s;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+  .h1#header {
+    font-size: 8rem;
+  }
+
+    .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .h1#header {
+    font-size: 9rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .slides:nth-child(1) {
+  transition: all 2s ease-in-out .5s;
+}
+
+.slides:nth-child(2) {
+  transition: all 2s ease-in-out .25s;
+}
+
+.slides:nth-child(3) {
+  transition: all 2s ease-in-out 0s;
+}
+
+.slides:nth-child(4) {
+  transition: all 2s ease-in-out 2.5s;
+}
+
+.slides:nth-child(5) {
+  transition: all 2s ease-in-out 2.25s;
+}
+
+.slides:nth-child(6) {
+  transition: all 2s ease-in-out 2s;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .h1#header {
+    font-size: 10rem;
+  }
+
 }
