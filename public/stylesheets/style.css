@@ -17,6 +17,9 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.container-fluid:nth-child(2), .container:nth-child(2) {
+padding-top: 74px;
+}
 
 a {
   color: #00B7FF;
