@@ -1,6 +1,7 @@
 extends layout
 
 block scripts
+  script(src='/javascripts/animate.js')
   script(src='/javascripts/global.js')
 
 block content
@@ -31,17 +32,17 @@ block content
       hr
     .row
       .col-12.card-deck
-        .card
+        .card.trigger
           img.card-img-top.img-fluid(src="/images/blueSequin_sm.jpg")
           .card-body
             h5.card-title Texture
             p.card-text We have all sorts of different feeling slimes, floam slimes with foam beads, crunchy slimes with sequins, and regular squishy slimey slimes.
-        .card
+        .card.trigger
           img.card-img-top.img-fluid(src="/images/fishTube_sm.jpg")
           .card-body
             h5.card-title Composition
             p.card-text Every slime we make is hand made and unique. Our slimes use all sorts of ingredients for a different feel, glue, baking soda, borax, activator, shaving cream.
-        .card
+        .card.trigger
           img.card-img-top.img-fluid(src="/images/pinkGlitter_sm.jpg")
           .card-body
             h5.card-title Color
@@ -49,37 +50,37 @@ block content
     h2.title The Slimes
      hr
   .row.no-gutters.text-center.portfolio
-    .col-lg-4.col-sm-6.slides
+    .col-lg-4.col-sm-6.slides.trigger
       a.pic-link(href="#")
         img.img-fluid(src="/images/purple_sm.jpg")
         .info
           .info-caption
             h4 Regular
-    .col-lg-4.col-sm-6.slides
+    .col-lg-4.col-sm-6.slides.trigger
       a.pic-link(href="#")
         img.img-fluid(src="/images/pinkFloam_sm.jpg")
         .info
           .info-caption
             h4 Fluffy
-    .col-lg-4.col-sm-6.slides
+    .col-lg-4.col-sm-6.slides.trigger
       a.pic-link(href="#")
         img.img-fluid(src="/images/blueGlitter_sm.jpg")
         .info
           .info-caption
             h4 Glitter
-    .col-lg-4.col-sm-6.slides
+    .col-lg-4.col-sm-6.slides.trigger
       a.pic-link(href="#")
         img.img-fluid(src="/images/yellowFloam_sm.jpg")
         .info
           .info-caption
             h4 Crunchy
-    .col-lg-4.col-sm-6.slides
+    .col-lg-4.col-sm-6.slides.trigger
       a.pic-link(href="#")
         img.img-fluid(src="/images/fishTube_sm.jpg")
         .info
           .info-caption
             h4 Designer
-    .col-lg-4.col-sm-6.slides
+    .col-lg-4.col-sm-6.slides.trigger
       a.pic-link(href="#")
         img.img-fluid(src="/images/bluePurple_sm.jpg")
         .info

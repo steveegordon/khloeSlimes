@@ -234,7 +234,7 @@ h2.title {
   display: inline-block;
 }
 
-.card-deck div {  
+.card {  
   opacity: 0;
 }
 
@@ -253,7 +253,7 @@ h2.title {
   }
 }
 
-.card-deck.animate div {
+.card.animate {
   animation: animation 2s forwards;
 }
 
@@ -273,15 +273,20 @@ h2.title {
   animation-delay: 2s;
 }
 
-.portfolio.animate .slides {
+/*.portfolio.animate .slides {
   transform: translateX(0);
   opacity: 1;
-}
+}*/
 
 .slides {
   transform: translateX(-100vw);
   opacity: 0;
 /*  transition: all 1s ease-in;*/
+}
+
+.slides.animate {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .slides:nth-child(1) {
@@ -388,4 +393,9 @@ h2.title {
     font-size: 10rem;
   }
 
+}
+
+
+.testing {
+  height: 4000px;
 }
