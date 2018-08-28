@@ -1,6 +1,8 @@
 doctype html
-html
+html(lang="en")
   head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width", initial-scale="1", shrink-to-fit="no")
     link(rel="icon" type="image/x-icon", href="/icons/favicon.ico")
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="stylesheet", href="/bootstrap/dist/css/bootstrap.min.css")
@@ -10,7 +12,7 @@ html
     block scripts
   body
     .container-fluid
-      nav.navbar.navbar-light.navbar-expand-lg
+      nav.navbar.navbar-light.navbar-expand-lg.fixed-top
         a.navbar-brand(href="/") Khloes Slimes
         button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarText")
           span.navbar-toggler-icon

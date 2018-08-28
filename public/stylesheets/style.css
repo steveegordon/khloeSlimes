@@ -17,12 +17,21 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+
 a {
   color: #00B7FF;
 }
 
 .nav-link, .navbar-brand {
   font-family: Bubbly;
+}
+
+.navbar .navbar-brand {
+  font-size: 2rem;
+}
+
+.nav-item .nav-link {
+  font-size: 1.6rem;
 }
 
 body > .container-fluid {
